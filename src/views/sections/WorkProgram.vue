@@ -50,7 +50,8 @@ onMounted(() => {
                     <p class="text-sm text-gray-700">
                         {{ service.details.description }}
                     </p>
-                    <div class="detail-cta bottom-5 absolute mx-auto mt-4">
+                    <!-- Button detail dibuang -->
+                    <!-- <div class="detail-cta bottom-5 absolute mx-auto mt-4">
                         <div class="flex items-center justify-between gap-8">
                             <button
                                 class="bg-gray-50 hover:bg-gray-200 rounded-xl shadow-gray-400 flex items-center justify-center p-2 transition-colors duration-500 ease-in-out border border-gray-400 shadow-md">Detail
@@ -63,7 +64,7 @@ onMounted(() => {
                             </button>
                            
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

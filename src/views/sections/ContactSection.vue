@@ -31,26 +31,27 @@
             <div class="md:flex-nowrap flex flex-row flex-wrap gap-8">
                 
                 <div class="w-full">
-                    <form action="#" class="font-inter space-y-8">
+                    <form action="#" @submit.prevent="addData" class="font-inter space-y-8">
                         <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
                             <label for="name" class="block mb-2 text-base font-medium text-gray-700">Nama</label>
-                            <input type="text" id="name" name="nama"
+                            <input type="text" id="name" name="nama" v-model="rname"
                                 class="shadow-sm bg-gray-50 border border-gray-300 text-gray-700 text-base rounded-lg focus:ring-rose-500 focus:border-rose-500 block w-full p-2.5"
                                 placeholder="Nama Anda" autocomplete="off" required>
                         </div>
                         <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
                             <label for="email" class="block mb-2 text-base font-medium text-gray-700">E-mail</label>
-                            <input type="text" id="email" name="email"
+                            <input type="text" id="email" name="email" v-model="remail"
                                 class="bg-gray-50 focus:ring-rose-500 focus:border-rose-500 block w-full p-3 text-base text-gray-900 border border-gray-300 rounded-lg shadow-sm"
                                 placeholder="emailanda@mail.com" autocomplete="off" required>
                         </div>
                         <div class="sm:col-span-2" data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
                             <label for="message" class="block mb-2 text-base font-medium text-gray-700">Pesan</label>
-                            <textarea id="message" rows="6"
+                            <textarea id="message" rows="6" v-model="rmsg"
                                 class="block p-2.5 w-full text-base text-gray-700 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-rose-500 focus:border-rose-500 "
                                 placeholder="Isi pesan anda" autocomplete="off" name="pesan"></textarea>
                         </div>
-                        <button type="submit"
+
+                        <button 
                             class="sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-rose-300 bg-blue-700 px-5 py-3 text-base font-medium text-center text-white transition-colors duration-300 ease-in-out rounded-lg"
                             data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Kirim Pesan</button>
                     </form>
@@ -65,3 +66,39 @@
         </div>
     </section>
 </template>
+
+<script>
+
+import { initializeApp } from "firebase/app";
+import { collection, addDoc, getFirestore } from "firebase/firestore"; 
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDcPPSki9vc0kT0qEuN5zr2EGfq73OM6rw",
+  authDomain: "ukmsb-6c78c.firebaseapp.com",
+  projectId: "ukmsb-6c78c",
+  storageBucket: "ukmsb-6c78c.appspot.com",
+  messagingSenderId: "881078967054",
+  appId: "1:881078967054:web:2fd9157cce6e0cca16555f"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+export default {
+    methods: {
+        async addData(){
+            try {
+            console.log()
+            const docRef = await addDoc(collection(db, "response"), {
+                "respondent-email": this.remail,
+                "respondent-name": this.rname,
+                "msg-content": this.rmsg
+            });
+            console.log("Document written with ID: ", docRef.id);
+            } catch (e) {
+            console.error("Error adding document: ", e);
+            }
+        },
+    }
+}
+</script>
