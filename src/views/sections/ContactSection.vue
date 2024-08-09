@@ -121,14 +121,15 @@ export default {
                     "respondent-email": this.remail,
                     "respondent-name": this.rname,
                     "msg-content": this.rmsg,
+                    "timestamp": new Date(),
                 });
                 console.log("Document written with ID: ", docRef.id);
-                this.showSuccessPopup = true; // Display success popup
-                this.resetForm(); // Optional: Clear form after success
+                this.showSuccessPopup = true; 
+                this.resetForm();
             } catch (e) {
                 console.error("Error adding document: ", e);
                 this.showErrorPopup = true;
-                this.errorMessage = e.message; // Set error message for display
+                this.errorMessage = e.message; 
             }
         },
         resetForm() {
@@ -145,7 +146,6 @@ export default {
 
 <style scoped>
 .popup {
-    /* Gaya dasar popup */
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
@@ -166,7 +166,6 @@ export default {
     color: red;
 }
 
-/* Gaya khusus untuk ikon */
 .fa-check-circle {
     color: green;
     font-size: 2em;
