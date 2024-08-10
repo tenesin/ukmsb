@@ -18,7 +18,7 @@
                 </p>
             </div>
             <div class="lg:mt-20 lg:col-span-5 lg:flex py-2">
-                <img data-aos="zoom-in" src="/src/assets/profil.png" alt="kepala sekolah"
+                <img data-aos="zoom-in" src="/src/assets/logo-ukm.png" alt="logo ukm"
                     class="lg:-mt-16 lg:w-full lg:h-full w-96 content-center align-middle items-center h-96 object-cover">
             </div>
         </div>

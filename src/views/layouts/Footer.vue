@@ -63,7 +63,7 @@
             <span class="text-base font-bold tracking-wide text-gray-900">Media Sosial</span>
             <div class="flex items-center mt-1 space-x-3">
               <a
-                href="/"
+                href="https://x.com/ukmsepakbolaits" target="_blank"
                 class="hover:text-blue-800 hover:text-deep-purple-accent-400 text-gray-500 transition-colors duration-300"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">
@@ -73,7 +73,7 @@
                 </svg>
               </a>
               <a
-                href="/"
+                href="https://instagram.com/ukmsepakbolaits" target="_blank"
                 class="hover:text-blue-800 hover:text-deep-purple-accent-400 text-gray-500 transition-colors duration-300"
               >
                 <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
@@ -84,7 +84,7 @@
                 </svg>
               </a>
               <a
-                href="/"
+                href="https://www.facebook.com/sepakbolaits" target="_blank"
                 class="hover:text-blue-800 hover:text-deep-purple-accent-400 text-gray-500 transition-colors duration-300"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">

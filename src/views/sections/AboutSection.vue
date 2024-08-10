@@ -57,7 +57,7 @@ onMounted(() => {
                 </ul>
             </div>
             <div class="lg:mt-0 mt-4">
-                <img class="w-full rounded-lg" src="/album/g1.jpg" alt="about img">
+                <img class="w-full rounded-lg" src="/album/logo-kabinet.png" alt="about img">
             </div>
         </div>
     </section>

@@ -57,7 +57,7 @@ export default {
         typeWriter() {
             const text = "UKM SEPAK BOLA ITS";
             let i = 0;
-            const speed = 100; // Kecepatan mengetik (ms)
+            const speed = 75; // Kecepatan mengetik (ms)
             const delay = 5000; // Jeda antara animasi (ms)
             const typingEffect = setInterval(() => {
                 if (i < text.length) {
