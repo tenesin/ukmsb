@@ -26,23 +26,23 @@
           <div class="space-y-2 text-sm">
             <p class="text-base font-bold tracking-wide text-gray-900">Kontak</p>
             <div class="flex">
-              <p class="mr-1 text-gray-800">No.Hp:</p>
+              <p class="mr-1 text-gray-800 hover:">Contact Person 1: </p>
               <a
-                href="tel:081234567890"
+                href="https://wa.me/6281234567890"
                 aria-label="Telepon kami"
                 title="Telepon Kami"
-                class="text-deep-purple-accent-400 hover:text-deep-purple-800 transition-colors duration-300"
-                >+62</a
+                class="text-deep-purple-accent-400 hover:text-blue-800 transition-colors duration-300"
+                >+6281232908878</a
               >
             </div>
             <div class="flex">
-              <p class="mr-1 text-gray-800">Email:</p>
+              <p class="mr-1 text-gray-800">Contact Person 2: </p>
               <a
-                href="mailto:info@lorem.mail"
-                aria-label="Email Kami"
-                title="Email kami"
-                class="text-deep-purple-accent-400 hover:text-deep-purple-800 transition-colors duration-300"
-                >info@lorem.mail</a
+                href="https://wa.me/6285855738812"
+                aria-label="Telepon kami"
+                title="Telepon Kami"
+                class="text-deep-purple-accent-400 hover:text-blue-800 transition-colors duration-300"
+                >+6285855738812</a
               >
             </div>
             <div class="flex">
@@ -53,9 +53,9 @@
                 rel="noopener noreferrer"
                 aria-label="Our address"
                 title="Our address"
-                class="text-deep-purple-accent-400 hover:text-deep-purple-800 transition-colors duration-300"
+                class="text-deep-purple-accent-400 hover:text-blue-800 transition-colors duration-300"
               >
-                ITS
+              Institut Teknologi Sepuluh Nopember, Campus Bund. ITS No.60111, Keputih, Kec. Sukolilo, Surabaya, Jawa Timur 60117
               </a>
             </div>
           </div>
