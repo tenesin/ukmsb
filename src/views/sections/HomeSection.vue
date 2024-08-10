@@ -57,7 +57,7 @@ export default {
         typeWriter() {
             const text = "UKM SEPAK BOLA ITS";
             let i = 0;
-            const speed = 75; // Kecepatan mengetik (ms)
+            const speed = 100; // Kecepatan mengetik (ms)
             const delay = 5000; // Jeda antara animasi (ms)
             const typingEffect = setInterval(() => {
                 if (i < text.length) {
@@ -69,7 +69,7 @@ export default {
                 } else {
                     clearInterval(typingEffect);
                     setTimeout(() => {
-                        this.$refs.typingText.innerText = ""; // Menghapus teks sebelumnya
+                        this.$refs.typingText.innerText = " "; // Menghapus teks sebelumnya
                         i = 0;
                         this.typeWriter(); // Memulai animasi kembali setelah jeda 5 detik
                     }, delay);

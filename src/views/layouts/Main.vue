@@ -9,6 +9,8 @@
 
     <GallerySection />
 
+    <MeetTheTeamSection />
+
     <ContactSection />
 </template>
 
@@ -20,6 +22,8 @@ import ServiceSection from '../sections/WorkProgram.vue'
 import GallerySection from '../sections/GallerySection.vue'
 import ContactSection from '../sections/ContactSection.vue'
 
+import MeetTheTeamSection from '../sections/MeetTheTeamSection.vue'
+
 export default {
     components: {
         HomeSection,
@@ -28,6 +32,7 @@ export default {
         ServiceSection,
         GallerySection,
         ContactSection,
+        MeetTheTeamSection
     }
 }
 </script>

@@ -13,6 +13,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "firebase": "^10.12.5",
+    "flowbite": "^2.5.1",
     "primeicons": "^7.0.0",
     "primevue": "^4.0.2",
     "sweetalert2": "^11.6.13",
