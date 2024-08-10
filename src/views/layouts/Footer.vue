@@ -95,7 +95,7 @@
               </a>
             </div>
             <p class="mt-4 text-sm text-gray-500">
-              Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+              Bergabunglah dengan UKM Sepakbola! Tingkatkan skill, nikmati permainan, dan raih prestasi bersama kami.
             </p>
           </div>
         </div>

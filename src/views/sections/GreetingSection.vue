@@ -8,13 +8,9 @@
                     UKM SEPAK BOLA ITS</h1>
                 <p class="font-opensans lg:mb-8 md:text-lg lg:text-xl md:max-w-full lg:max-w-xl mb-6 font-medium text-gray-700"
                     data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
-                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse natus repudiandae aliquam quibusdam assumenda nihil corrupti soluta doloremque libero dolorum qui, autem ducimus beatae quas quae sint culpa eveniet magni?
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam tempore quidem sint fugiat natus? Ad laudantium esse omnis quasi ducimus numquam ratione praesentium odio temporibus voluptatibus. Odit quos pariatur voluptas?
+                    UKM Sepakbola kami adalah wadah bagi mahasiswa yang ingin mengembangkan kemampuan bermain sepakbola sambil bersenang-senang. Kami rutin mengadakan latihan, pertandingan persahabatan, dan ikut serta dalam berbagai kompetisi. Fokus kami adalah meningkatkan keterampilan teknis, kebugaran fisik, dan kerja sama tim anggota.
                     <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis facilis possimus, incidunt quidem nemo pariatur officiis laboriosam, sint aut aliquid consequuntur, fugiat dolor totam veniam fugit vitae eum natus neque.
-                    <br>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit molestiae quaerat facere unde veniam dignissimos debitis, illum qui vero provident, exercitationem sint laborum sapiente reprehenderit aperiam officiis dolores labore iste?
+                    Kami mengutamakan lingkungan yang ramah dan inklusif, di mana semua anggota dapat belajar dan bertumbuh bersama. Baik Anda seorang pemula maupun pemain berpengalaman, di UKM Sepakbola, semua memiliki kesempatan untuk bermain dan berkembang sesuai dengan kemampuan masing-masing.
                 </p>
             </div>
             <div class="lg:mt-20 lg:col-span-5 lg:flex py-2">
