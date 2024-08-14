@@ -26,7 +26,7 @@
                     Jaring Aspirasi
                 </h1>
                 <p class="lg:mb-16 sm:text-xl font-medium text-gray-700" data-aos="fade-up" data-aos-delay="500"
-                    data-aos-duration="500">Sampaikan aspirasi demi UKM SEPAK BOLA ITS menjadi lebih berprestasi</p>
+                    data-aos-duration="500">Sampaikan aspirasi anda demi UKM SEPAK BOLA ITS menjadi lebih berprestasi</p>
             </div>
             <div class="md:flex-nowrap flex flex-row flex-wrap gap-8">
 
@@ -35,25 +35,39 @@
                         <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
                             <label for="name" class="block mb-2 text-base font-medium text-gray-700">Nama</label>
                             <input type="text" id="name" name="nama" v-model="rname"
-                                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-700 text-base rounded-lg focus:ring-rose-500 focus:border-rose-500 block w-full p-2.5"
+                                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-700 text-base rounded-lg focus:ring-blue-500 focus:border-rose-500 block w-full p-2.5"
                                 placeholder="Nama Anda" autocomplete="off" required>
                         </div>
+
+                        <div class="sm:col-span-2" data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
+                            <label for="message" class="block mb-2 text-base font-medium text-gray-700">Status</label>
+                                <select id="status" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-700 text-base rounded-lg focus:ring-blue-500 focus:border-rose-500 block w-full p-2.5">
+                                    <option selected>Pilih sesuai dengan status anda</option>
+                                    <option value="pengurus">Pengurus UKM</option>
+                                    <option value="mhs-in">Mahasiswa ITS</option>
+                                    <option value="mhs-ex">Mahasiswa luar ITS</option>    
+                                </select>
+                        </div>
+
                         <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
                             <label for="email" class="block mb-2 text-base font-medium text-gray-700">E-mail</label>
                             <input type="email" id="email" name="email" v-model="remail"
-                                class="bg-gray-50 focus:ring-rose-500 focus:border-rose-500 block w-full p-3 text-base text-gray-900 border border-gray-300 rounded-lg shadow-sm"
+                                class="bg-gray-50 focus:ring-blue-500 focus:border-rose-500 block w-full p-3 text-base text-gray-900 border border-gray-300 rounded-lg shadow-sm"
                                 placeholder="emailanda@mail.com" autocomplete="off" required>
                         </div>
                         <div class="sm:col-span-2" data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
                             <label for="message" class="block mb-2 text-base font-medium text-gray-700">Pesan</label>
                             <textarea id="message" rows="6" v-model="rmsg"
-                                class="block p-2.5 w-full text-base text-gray-700 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-rose-500 focus:border-rose-500 "
+                                class="block p-2.5 w-full text-base text-gray-700 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-rose-500 focus:border-rose-blue "
                                 placeholder="Isi pesan anda" autocomplete="off" name="pesan"></textarea>
                         </div>
+
+                        
 
                         <button
                             class="sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-rose-300 bg-blue-700 px-5 py-3 text-base font-medium text-center text-white transition-colors duration-300 ease-in-out rounded-lg"
                             data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Kirim Pesan</button>
+                            
                     </form>
                     <div v-if="showSuccessPopup">
                         <div class="popup success">
