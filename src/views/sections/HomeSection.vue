@@ -1,7 +1,7 @@
 <template>
     <!-- Home Section Start -->
-    <section id="home" class="md:bg-top bg-blend-multiply relative bg-gray-400 bg-right bg-no-repeat bg-cover"
-        style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.25), transparent), url('/album/bg-home.png')">
+    <section id="home" class="md:bg-top bg-right bg-no-repeat bg-cover"
+        style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), transparent), url('/album/bg-home.png')">
         <div class="font-inter lg:py-80 max-w-screen-xl px-4 py-64 mx-auto text-center">
             <h1 ref="typingText"
                 class="md:text-5xl lg:text-6xl mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-100">
