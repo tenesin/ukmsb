@@ -30,7 +30,7 @@ onMounted(() => {
                         </rect>
                     </svg>
                 </span>
-                Mengenal UKM SEPAK BOLA ITS
+                Mengenal Kabinet Gelora Cita
             </h2>
         </div>
         <div class="lg:grid lg:grid-cols-2 lg:pb-16 lg:px-6 items-start max-w-screen-xl gap-16 px-4 py-8 mx-auto">

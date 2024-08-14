@@ -32,7 +32,7 @@ onMounted(() => {
                             </rect>
                         </svg>
                     </span>
-                    Program Kerja UKM SEPAK BOLA ITS
+                    Program Kerja Gelora Cita
                 </h2>
                 
             </div>

@@ -40,7 +40,7 @@
                         </div>
                         <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
                             <label for="email" class="block mb-2 text-base font-medium text-gray-700">E-mail</label>
-                            <input type="text" id="email" name="email" v-model="remail"
+                            <input type="email" id="email" name="email" v-model="remail"
                                 class="bg-gray-50 focus:ring-rose-500 focus:border-rose-500 block w-full p-3 text-base text-gray-900 border border-gray-300 rounded-lg shadow-sm"
                                 placeholder="emailanda@mail.com" autocomplete="off" required>
                         </div>

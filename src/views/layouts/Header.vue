@@ -85,6 +85,21 @@
             >Galeri</a
           >
         </li>
+        <li
+          :class="{
+            'text-blue-700 font-bold': activeMenu === 'gallery',
+            'text-gray-100 ': activeMenu !== 'gallery',
+            'text-gray-800': isScrolled
+          }"
+        >
+          <a
+            href="#meet"
+            aria-label="team"
+            title="team"
+            class="hover:text-blue-700 tracking-wide transition-colors duration-200"
+            >Meet The Team</a
+          >
+        </li>
       </ul>
       <ul class="lg:flex items-center hidden space-x-8">
         <li>
@@ -229,6 +244,21 @@
                     >Galeri</a
                   >
                 </li>
+                <li
+                  :class="{
+                    'text-blue-700 font-bold': activeMenu === 'meet',
+                    'text-gray-800 ': activeMenu !== 'meet'
+                  }"
+                >
+                  <a
+                    href="#meet"
+                    aria-label="meet-the-team "
+                    title="meet-the-team "
+                    class="hover:text-blue-800 font-medium tracking-wide transition-colors duration-200"
+                    >Meet The Team</a
+                  >
+                </li>
+                
 
                 <div class="flex flex-col items-center justify-center gap-6">
                   <li>
@@ -291,6 +321,7 @@ export default {
       const serviceOffset = document.getElementById('service').offsetTop
       const galleryOffset = document.getElementById('gallery').offsetTop
       const contactOffset = document.getElementById('contact').offsetTop
+      const meetOffset = document.getElementById('meet').offsetTop
       const windowHeight = window.innerHeight
       const scrollPosition = window.scrollY
 
@@ -308,9 +339,14 @@ export default {
         this.activeMenu = 'service'
       } else if (
         scrollPosition >= galleryOffset - windowHeight / 2 &&
+        scrollPosition < meetOffset - windowHeight / 2
+      )  {
+        this.activeMenu = 'gallery'
+      } else if (
+        scrollPosition >= meetOffset - windowHeight / 2 &&
         scrollPosition < contactOffset - windowHeight / 2
       ) {
-        this.activeMenu = 'gallery'
+        this.activeMenu = 'meet'
       } else {
         this.activeMenu = 'contact'
       }

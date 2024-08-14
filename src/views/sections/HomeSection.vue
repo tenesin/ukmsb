@@ -7,7 +7,7 @@
                 class="md:text-5xl lg:text-6xl mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-100">
             </h1>
             <p class="lg:text-xl sm:px-16 lg:px-48 text-gray-50 mb-8 text-lg font-normal">
-                Selamat datang di klub sepak bola kami, tempat semangat dan keunggulan bertemu di lapangan</p>
+                Selamat datang di klub UKM Sepak Bola ITS, di mana semangat dan prestasi bergema di setiap sudut lapangan!</p>
         </div>
         <div class="md:gap-8 md:p-8 z-[999] -bottom-16 shadow-gray-500 font-inter md:grid-cols-4 absolute inset-x-0 grid max-w-screen-xl grid-cols-2 gap-6 p-6 mx-auto bg-gray-200 rounded-lg shadow-md"
             data-aos="fade-up" data-aos-duration="1000">
