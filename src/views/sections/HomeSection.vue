@@ -1,12 +1,12 @@
 <template>
     <!-- Home Section Start -->
     <section id="home" class="md:bg-top bg-right bg-no-repeat bg-cover"
-        style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), transparent), url('/album/bg-home.png')">
+        style="background-image: url('/album/bg-home.png')">
         <div class="font-inter lg:py-80 max-w-screen-xl px-4 py-64 mx-auto text-center">
             <h1 ref="typingText"
                 class="md:text-5xl lg:text-6xl mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-100">
             </h1>
-            <p class="lg:text-xl sm:px-16 lg:px-48 text-gray-50 mb-8 text-lg font-normal">
+            <p class="lg:text-xl sm:px-16 lg:px-48 text-gray-50 mb-8 text-md font-normal">
                 Selamat datang di klub UKM Sepak Bola ITS, di mana semangat dan prestasi bergema di setiap sudut lapangan!</p>
         </div>
         <div class="md:gap-8 md:p-8 z-[999] -bottom-16 shadow-gray-500 font-inter md:grid-cols-4 absolute inset-x-0 grid max-w-screen-xl grid-cols-2 gap-6 p-6 mx-auto bg-gray-200 rounded-lg shadow-md"
@@ -26,7 +26,7 @@
 
             <!-- stat - start -->
             <div class="text-rose-700 flex flex-col items-center transition-all duration-500 ease-in-out">
-                <div class="sm:text-2xl md:text-3xl text-xl font-bold">{{ prestasi }}</div>
+                <div class="sm:text-2xl md:text-3xl text-xl font-bold">{{ prestasi }} +</div>
                 <div class="sm:text-base text-sm font-semibold">Prestasi</div>
             </div>
             <div class="text-rose-700 flex flex-col items-center transition-all duration-500 ease-in-out">
@@ -79,7 +79,7 @@ export default {
         animateCount() {
             const finalPengurus = 20;
             const finalprogramKerja = 8;
-            const finalPrestasi = 7;
+            const finalPrestasi = 5;
             const finalDivisi = 7;
 
             const duration = 5000;
