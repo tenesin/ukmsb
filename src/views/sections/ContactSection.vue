@@ -40,13 +40,13 @@
                         </div>
 
                         <div class="sm:col-span-2" data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
-                            <label for="message" class="block mb-2 text-base font-medium text-gray-700">Status</label>
-                                <select id="status" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-700 text-base rounded-lg focus:ring-blue-500 focus:border-rose-500 block w-full p-2.5">
-                                    <option selected>Pilih sesuai dengan status anda</option>
-                                    <option value="pengurus">Pengurus UKM</option>
-                                    <option value="mhs-in">Mahasiswa ITS</option>
-                                    <option value="mhs-ex">Mahasiswa luar ITS</option>    
-                                </select>
+                            <label for="status" class="block mb-2 text-base font-medium text-gray-700">Status</label>
+                            <select id="status" v-model="rstatus" required class="shadow-sm bg-gray-50 border border-gray-300 text-gray-700 text-base rounded-lg focus:ring-blue-500 focus:border-rose-500 block w-full p-2.5">
+                                <option value="" disabled selected>Pilih sesuai dengan status anda</option>
+                                <option value="Pengurus UKM">Pengurus UKM</option>
+                                <option value="Mahasiswa ITS">Mahasiswa ITS</option>
+                                <option value="Mahasiswa Luar ITS / Umum">Mahasiswa luar ITS / Umum</option>    
+                            </select>
                         </div>
 
                         <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="500">
@@ -65,8 +65,12 @@
                         
 
                         <button
-                            class="sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-rose-300 bg-blue-700 px-5 py-3 text-base font-medium text-center text-white transition-colors duration-300 ease-in-out rounded-lg"
-                            data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Kirim Pesan</button>
+                            :disabled="!isFormValid"
+                            :class="{'opacity-50 cursor-not-allowed': !isFormValid, 'hover:bg-blue-800': isFormValid}"
+                            class="sm:w-fit focus:ring-4 focus:outline-none focus:ring-rose-300 bg-blue-700 px-5 py-3 text-base font-medium text-center text-white transition-colors duration-300 ease-in-out rounded-lg"
+                            data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
+                            Kirim Pesan
+                        </button>
                             
                     </form>
                     <div v-if="showSuccessPopup">
@@ -123,6 +127,7 @@ export default {
             remail: "",
             rname: "",
             rmsg: "",
+            rstatus: "",
             showSuccessPopup: false,
             showErrorPopup: false,
             errorMessage: "",
@@ -135,6 +140,7 @@ export default {
                     "respondent-email": this.remail,
                     "respondent-name": this.rname,
                     "msg-content": this.rmsg,
+                    "respondent-status": this.rstatus,
                     "timestamp": new Date(),
                 });
                 console.log("Document written with ID: ", docRef.id);
@@ -150,11 +156,17 @@ export default {
             this.remail = "";
             this.rname = "";
             this.rmsg = "";
+            this.rstatus = "";
         },
         refreshPage() {
             window.location.reload();
         }
     },
+    computed: {
+    isFormValid() {
+        return this.remail && this.rname && this.rmsg && this.rstatus;
+    }
+},
 };
 </script>
 
