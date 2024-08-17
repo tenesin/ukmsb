@@ -3,8 +3,9 @@
     <section id="home" class="md:bg-top bg-right bg-no-repeat bg-cover"
         style="background-image: url('/album/bg-home.png')">
         <div class="font-inter lg:py-80 max-w-screen-xl px-4 py-64 mx-auto text-center">
-            <h1 ref="typingText"
+            <h1
                 class="md:text-5xl lg:text-6xl mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-100">
+                UKM SEPAK BOLA ITS
             </h1>
             <p class="lg:text-xl sm:px-16 lg:px-48 text-gray-50 mb-8 text-md font-normal">
                 Selamat datang di klub UKM Sepak Bola ITS, di mana semangat dan prestasi bergema di setiap sudut lapangan!</p>
