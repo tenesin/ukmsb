@@ -10,7 +10,7 @@
             <p class="lg:text-xl sm:px-16 lg:px-48 text-gray-50 mb-8 text-md font-normal">
                 Selamat datang di klub UKM Sepak Bola ITS, di mana semangat dan prestasi bergema di setiap sudut lapangan!</p>
         </div>
-        <div class="md:gap-8 md:p-8 z-[999] -bottom-16 shadow-gray-500 font-inter md:grid-cols-4 absolute inset-x-0 grid max-w-screen-xl grid-cols-2 gap-6 p-6 mx-auto bg-gray-200 rounded-lg shadow-md"
+        <div class="md:gap-8 md:p-8 z-[999] -bottom-16  shadow-gray-500 font-inter md:grid-cols-4 absolute inset-x-0 grid max-w-screen-xl grid-cols-2 gap-6 p-6 mx-auto bg-gray-200 rounded-lg shadow-md"
             data-aos="fade-up" data-aos-duration="1000">
             <!-- stat - start -->
             <div class="text-rose-700 flex flex-col items-center transition-all duration-500 ease-in-out">
@@ -51,32 +51,9 @@ export default {
         };
     },
     mounted() {
-        this.typeWriter();
         this.animateCount();
     },
     methods: {
-        typeWriter() {
-            const text = "UKM SEPAK BOLA ITS";
-            let i = 0;
-            const speed = 100; // Kecepatan mengetik (ms)
-            const delay = 5000; // Jeda antara animasi (ms)
-            const typingEffect = setInterval(() => {
-                if (i < text.length) {
-                    if (text.charAt(i) === " ") {
-                        this.$refs.typingText.innerHTML += " "; // Menambah spasi
-                    }
-                    this.$refs.typingText.innerHTML += text.charAt(i);
-                    i++;
-                } else {
-                    clearInterval(typingEffect);
-                    setTimeout(() => {
-                        this.$refs.typingText.innerText = " "; // Menghapus teks sebelumnya
-                        i = 0;
-                        this.typeWriter(); // Memulai animasi kembali setelah jeda 5 detik
-                    }, delay);
-                }
-            }, speed);
-        },
         animateCount() {
             const finalPengurus = 20;
             const finalprogramKerja = 8;
