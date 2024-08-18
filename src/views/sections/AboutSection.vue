@@ -38,7 +38,7 @@ onMounted(() => {
                 <h2
                     class="font-inter bg-rose-100 shadow-slate-300 px-6 py-1 text-xl font-bold text-left text-gray-900 border border-gray-200 rounded-sm shadow-md">
                     Visi</h2>
-                <p class="md:text-lg font-opensans mt-2 mb-4 text-base font-medium text-justify text-gray-700">
+                <p data-aos="zoom-in" class="md:text-lg font-opensans mt-2 mb-4 text-base font-medium text-justify text-gray-700">
                     Terwujudnya UKM SEPAK BOLA ITS yang <span class="text-blue-600 font-bold">Inovatif</span> dan <span class="text-blue-600 font-bold">Prestatif</span> sebagai wadah pengembangan minat bakat mahasiswa ITS dengan menjunjung tinggi <span class="text-blue-600 font-bold">Profesionalitas</span> dan semangat  <span class="text-blue-600 font-bold">Kekeluargaan</span>.</p>
                 <h2
                     class="font-inter bg-rose-100 shadow-slate-300 px-6 py-1 text-xl font-bold text-left text-gray-900 border border-gray-200 rounded-sm shadow-md">
@@ -56,7 +56,7 @@ onMounted(() => {
                     </li>
                 </ul>
             </div>
-            <div class="lg:mt-0 mt-4">
+            <div data-aos="zoom-in" class="lg:mt-0 mt-4">
                 <img class="w-full rounded-lg" src="/album/logo-kabinet.png" alt="about img">
             </div>
         </div>
